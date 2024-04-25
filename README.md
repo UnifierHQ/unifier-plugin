@@ -10,7 +10,7 @@ plugin.json contains the metadata of your plugin, such as the plugin ID, name, e
 read this file on boot, so it knows which files to load to load your plugin.
 
 Below are the list of values you may have in your plugin.json file. Unless otherwise stated, all
-keys are compatible with Unifier **v1.2.0** and newer.
+keys are compatible with Unifier **v1.2.0** (release 36) and newer.
 
 ### `id`
 Plugin ID. Unifier uses this as the identifier for your plugin, and no plugin
@@ -32,7 +32,7 @@ Plugin release number. Unifier will use this to tell if the plugin is up to date
 ### `minimum`
 The minimum Unifier release required to use your plugin.
 
-### `requirements` (v1.2.1+)
+### `requirements` (v1.2.0-patch2+/rel38+)
 Dependencies the plugin needs other than the ones in Unifier's requirements.txt file.
 
 ### `shutdown`
