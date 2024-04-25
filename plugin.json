@@ -1,5 +1,5 @@
 {
-  "id": "plugin_id",
+  "id": "template",
   "name": "Plugin Template",
   "description": "This is a template for Unifier plugins.",
   "version": "v1.0.0",
