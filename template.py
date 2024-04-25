@@ -7,7 +7,7 @@ class Template(commands.Cog):
     def __init__(self,bot):
         self.bot = bot
 
-    @commands.command
+    @commands.command()
     async def template(self,ctx):
         await ctx.send('This is a template plugin!')
 
