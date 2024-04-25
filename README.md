@@ -44,7 +44,7 @@ Plugin utility scripts. If `shutdown` is true, you **must** have `[plugin_id]_ch
 ----
 
 ## Examples
-Need an example to know what you need to put in? You might want to check out
+Need an example to know what you need to have in your repository? You might want to check out
 [unifier-revolt](https://github.com/UnifierHQ/unifier-revolt).
 
 ## Installing plugins
