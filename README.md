@@ -32,6 +32,17 @@ Plugin release number. Unifier will use this to tell if the plugin is up to date
 ### `minimum`
 The minimum Unifier release required to use your plugin.
 
+### `services` (v1.2.3+/rel43+)
+Services your plugin will provide. Instance owners will need to review and allow services in order 
+for the plugin to be installed. Services include:
+- `content_protection`: Plugin provides content filtering. Grants access to message content and
+  moderation actions.
+- `content_processing`: Plugin provides content processing (e.g. message stylizing). Grants access
+  to message content.
+> [!WARNING]
+> If `services` is not empty, you will need to have a file called `[plugin_id]_[service].py` that
+> provides the service, and it should be added in `utils`.
+
 ### `requirements` (v1.2.0-patch2+/rel38+)
 Dependencies the plugin needs other than the ones in Unifier's requirements.txt file.
 
