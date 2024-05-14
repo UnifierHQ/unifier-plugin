@@ -33,6 +33,8 @@ Plugin release number. Unifier will use this to tell if the plugin is up to date
 The minimum Unifier release required to use your plugin.
 
 ### `services` (v1.2.3+/rel43+)
+> [!WARNING]
+> We haven't documented this yet, but we will in the near future.
 Services your plugin will provide. Instance owners will need to review and allow services in order 
 for the plugin to be installed. Services include:
 - `content_protection`: Plugin provides content filtering. Grants access to message content and
