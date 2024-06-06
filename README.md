@@ -42,6 +42,8 @@ for the plugin to be installed. Services include:
   moderation actions.
 - `content_processing`: Plugin provides content processing (e.g. message stylizing). Grants access
   to message content.
+- `emojis` (v2.0.1+/rel51+): Plugin provides an emoji pack. An emoji.json file must be present, as
+  well as emojis (can be images or GIFs) in an emojis folder.
 > [!WARNING]
 > If `services` is not empty, you will need to have a file called `[plugin_id]_[service].py` that
 > provides the service, and it should be added in `utils`.
