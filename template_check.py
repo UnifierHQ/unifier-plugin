@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 # If you don't need to run code before reloading or unloading the
 # plugin, you can safely delete this file, as long as the shutdown
 # value in plugin.json is set to false and the filename isn't 
-# present under scripts.
+# present under utils.
 
 async def check(bot):
     """If you need certain code to be ran before unload/reload,
