@@ -16,8 +16,8 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-import discord
-from discord.ext import commands
+import nextcord # use import nextcord for v1.2
+from nextcord.ext import commands
 
 class Template(commands.Cog):
     """A template cog written for unifier-plugin temmplate repo"""
