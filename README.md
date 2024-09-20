@@ -5,6 +5,17 @@ This is a template repository you can use to write plugins for Unifier.
 > Once you have read through everything below and know what you're doing, you're free to replace
 > this README file with whatever you want.
 
+## September 20, 2024: Template now comes with a Pylint workflow!
+We've added a Pylint workflow as of September 20! With this workflow, you'll be able to detect
+issues in your code as you make commits your Plugin repository, so you can fix them before you
+release your Plugin.
+
+Please note that our workflow only detects errors (such as SyntaxErrors, ImportErrors, etc, not
+warnings, refactors, etc). If you need to detect more issues in your Plugin, you are free to modify
+the workflow to your liking.
+
+To add this workflow to an existing repository, please copy it to `.github/workflows/pylint.yml`.
+
 ## plugin.json
 plugin.json contains the metadata of your plugin, such as the plugin ID, name, etc. Unifier will
 read this file on boot, so it knows which files to load to load your plugin.
