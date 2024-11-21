@@ -6,6 +6,7 @@
   "release": 0,
   "minimum": 36,
   "services": [],
+  "bridge_platform": null,
   "requirements": [],
   "shutdown": false,
   "modules": [
