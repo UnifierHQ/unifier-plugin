@@ -55,9 +55,15 @@ for the plugin to be installed. Services include:
   to message content.
 - `emojis` (v2.0.1+/rel51+): Plugin provides an emoji pack. An emoji.json file must be present, as
   well as emojis (can be images or GIFs) in an emojis folder.
+- `bridge_platform` (v3.0.0+/rel76+): Plugin provides support for a platform through NUPS. The
+  `bridge_platform` key must be set for this to work.
 > [!WARNING]
 > If `services` is not empty, you will need to have a file called `[plugin_id]_[service].py` that
 > provides the service, and it should be added in `utils`.
+
+### `bridge_platform` (v3.0.0+/rel76+)
+An alphanumeric, all-lowercase identifier for the platform the plugin provides support for. Leave
+this empty if you don't have `bridge_platform` as a service.
 
 ### `requirements` (v1.2.0-patch2+/rel38+)
 Dependencies the plugin needs other than the ones in Unifier's requirements.txt file.
