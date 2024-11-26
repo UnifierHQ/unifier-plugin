@@ -78,10 +78,10 @@ If your plugin needs special code being ran before being unloaded, set this to t
 > If this is true, your plugin will not be able to be unloaded without a `[plugin_id]_check.py`
 > file. You will need to specify this in the `utils` key.
 
-### `required_tokens` (v3.8.0+/139+)
+### `required_tokens` (v3.8.0+/rel139+)
 Tokens that the Modifier needs.
 
-### `uses_tokenstore` (v3.8.0+/139+)
+### `uses_tokenstore` (v3.8.0+/rel139+)
 Modules in `modules` that need to access tokens declared in `required_tokens`. These should take
 in both `bot` and `tokenstore` in the `add_cog` method.
 
