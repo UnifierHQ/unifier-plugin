@@ -50,7 +50,7 @@ The minimum Unifier release required to use your plugin.
 Services your plugin will provide. Instance owners will need to review and allow services in order 
 for the plugin to be installed. Services include:
 - `content_protection`: Plugin provides content filtering. Grants access to message content and
-  moderation actions.
+  moderation actions. **This will be deprecated in v3.8.0.**
 - `content_processing`: Plugin provides content processing (e.g. message stylizing). Grants access
   to message content.
 - `emojis` (v2.0.1+/rel51+): Plugin provides an emoji pack. An emoji.json file must be present, as
