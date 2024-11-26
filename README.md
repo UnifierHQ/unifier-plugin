@@ -50,7 +50,7 @@ The minimum Unifier release required to use your plugin.
 Services your plugin will provide. Instance owners will need to review and allow services in order 
 for the plugin to be installed. Services include:
 - `content_protection`: Plugin provides content filtering. Grants access to message content and
-  moderation actions. **This will be deprecated in v3.8.0.**
+  moderation actions. **This will be deprecated in v3.8.0/rel139.**
 - `content_processing`: Plugin provides content processing (e.g. message stylizing). Grants access
   to message content.
 - `emojis` (v2.0.1+/rel51+): Plugin provides an emoji pack. An emoji.json file must be present, as
@@ -68,17 +68,32 @@ this empty if you don't have `bridge_platform` as a service.
 ### `requirements` (v1.2.0-patch2+/rel38+)
 Dependencies the plugin needs other than the ones in Unifier's requirements.txt file.
 
+### `attribution` (v3.7.1+/rel138+)
+Open source attributions, usually used to reference third-party libraries. These will be shown in
+`/about`.
+
 ### `shutdown`
 If your plugin needs special code being ran before being unloaded, set this to true.
 > [!WARNING]
 > If this is true, your plugin will not be able to be unloaded without a `[plugin_id]_check.py`
 > file. You will need to specify this in the `utils` key.
 
+### `required_tokens` (v3.8.0+/139+)
+Tokens that the Modifier needs.
+
+### `uses_tokenstore` (v3.8.0+/139+)
+Modules in `modules` that need to access tokens declared in `required_tokens`. These should take
+in both `bot` and `tokenstore` in the `add_cog` method.
+
 ### `modules`
-Plugin modules. All files in here will be loaded as an extension when loading the plugin.
+Modifier modules. All files in here will be loaded as an extension when loading the Modifier.
 
 ### `utils`
-Plugin utility scripts. If `shutdown` is true, you **must** have `[plugin_id]_check.py` in here.
+Modifier utility scripts. If `shutdown` is true, you **must** have `[plugin_id]_check.py` in here.
+
+### `filters` (v3.8.0+/139+)
+Bridge Filters for content filtering. All files in here will be loaded to the Bridge when loading
+the Modifier.
 
 ----
 
